@@ -1,8 +1,6 @@
 <template>
 <div class="books container">
 
-<div v-show="loading" id="sp"></div>
-
 <div v-if="$store.state.user" class="trade">
 
   <div class="ctrl">
@@ -154,7 +152,6 @@ export default {
         })
     },
     getAll () {
-      import('@/assets/js/loading')
       this.$axios.post('/api/book/all', { user: this.$store.state.user })
         .then(data => {
           data = data.data

@@ -113,11 +113,22 @@ $headerH: 50px;
 }
 .nav-auth {
   float: right;
-  li {
-    display: inline-block;
+  ul {
+    margin: 0;
+    li {
+      height: $headerH;
+      display: inline-block;
+    }
   }
 }
 .router-link-exact-active {
   background-color: $b;
+}
+@media all and (max-width: 411px) {
+  #app {
+    nav {
+      padding: 0;
+    }
+  }
 }
 </style>
