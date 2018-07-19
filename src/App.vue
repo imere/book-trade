@@ -46,12 +46,16 @@ export default {
   name: 'App',
   methods: {
     ssCheck () {
-      let ss = sessionStorage
-      ss.setItem('test', 'test')
-      if (ss.getItem('test') !== 'test') {
+      try {
+        let ss = sessionStorage
+        ss.setItem('test', 'test')
+        if (ss.getItem('test') !== 'test') {
+          alert('"session storage" needed to function')
+        }
+        ss.removeItem('test')
+      } catch (ex) {
         alert('"session storage" needed to function')
       }
-      ss.removeItem('test')
     },
     init () {
       this.$store.dispatch('init')
