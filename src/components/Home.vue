@@ -7,6 +7,20 @@
 <p>
   find your favorite books here
 </p>
+<pre>
+  <code>
+    test accounts: [{
+      "name": "admin",
+      "pass": "admin"
+    }, {
+      "name": "admini",
+      "pass": "admini"
+    }, {
+      "name": "adminis",
+      "pass": "adminis"
+    }]
+  </code>
+</pre>
 
 </div>
 </template>
