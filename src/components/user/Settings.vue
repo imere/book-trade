@@ -37,7 +37,7 @@
   <div v-if="!error">
     <ul class="list">
       <li v-for="(v, i) in data" :key="i" :id="i" :title="v.title" v-if="!v.acc">
-        <img :src="v.pic" :alt="v.title" />
+        <img :src="v.pic" :alt="v.title" onerror="this.src=window.HOLDER;this.src=undefined;" />
         <i @click="del(i, v.id)" class="fas fa-times fa-fw" title="delete"></i>
       </li>
     </ul>

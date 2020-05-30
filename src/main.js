@@ -7,6 +7,10 @@ import App from './App'
 import store from './store'
 import router from './router'
 
+import holder from './assets/logo.png';
+
+window.HOLDER = holder;
+
 Vue.config.productionTip = false
 Vue.use(Vuex)
 Vue.prototype.$axios = axios
