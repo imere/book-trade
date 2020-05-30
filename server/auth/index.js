@@ -1,8 +1,8 @@
 module.exports = {
   check (req, res, next) {
-    if (true) {
-      return next()
-    }
+    // if (true) {
+    //   return next()
+    // }
     if (!req.session ||
         !req.session.user ||
         !req.body.user ||
