@@ -44,7 +44,7 @@
   <ul>
     <li v-for="(v, i) in books" :key="i">
       <i v-if="$store.state.user && $store.state.user !== v.from && $store.state.user !== v.to && !v.to && !v.acc" @click="add(v._id)" title="require" class="fas fa-exchange-alt fa-fw"></i>
-      <img :title="v.title" :alt="v.title" :src="v.pic" onerror="this.src=window.HOLDER;this.src=undefined;" />
+      <img :title="v.title" :alt="v.title" :src="v.pic" onerror="this.src=window.HOLDER;this.onerror=undefined;" />
     </li>
   </ul>
 </div>
